@@ -1,6 +1,8 @@
 # praxis_fog_gateway_cookbook cookbook
 
 # Requirements
+rvm cookbook
+bluepill cookbook
 
 # Usage
 
