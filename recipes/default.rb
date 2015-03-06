@@ -16,3 +16,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+node.default['rvm']['default_ruby'] = "2.1.5"
+node.default['rvm']['user_default_ruby'] = "2.1.5"
+include_recipe "rvm::system"
+include_recipe "rvm::gem_package"
+
+gem "unicorn" do
+  action :install
+end
+
+
